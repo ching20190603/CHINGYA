@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Welcome</title>
+    <style>
+         body {
+            font-family: Arial,'Microsoft JhengHei'!important;
+
+            letter-spacing:12px;
+            color:#625b53;
+
+        }
+        input[type="submit"] {
+            background: -webkit-linear-gradient(#55acee, #148df9 50%, #55acee);
+            background:transparent;
+            border: 1px solid #FFFFFF;
+            border-radius: 1000px;
+            padding: 7px 30px;
+            color: #FFFFFF;
+            display: inline-block;
+            font: normal 400 18px/1 "zenhei", sans-serif;
+            text-align: center;
+            text-shadow: 2px #0b5394;
+            /*border-top:50px solid #000;  */ /*設置並顯示上邊框*/
+            /*border-bottom:none;*/ /*不設置下邊框*/
+            /*border-left:50px solid transparent;*/ /*設置但隱藏左邊框*/
+            /*border-right:50px solid transparent;*/
+        }
+
+
+        body {
+            background-image: url(image/10.JPG);
+
+
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:2000px auto;
+            /*background-size: cover;*/
+        }
+    </style>
+    <script language="javascript">
+        function ShowHello() {
+               var imgg = document.getElementById("imgg");
+            var today = new Date();
+            var ss = today.getSeconds();
+            ss = checkTime(ss);
+            //document.getElementById('clock').innerHTML = ss;                
+             var timeoutId = setTimeout(ShowHello, 500);     
+            function checkTime(i) {
+
+                if (i % 2 == 0) {                    
+                    var j = (i / 2);
+                    if (j>4&&j<10)
+                    {
+                        j = j - 5;
+                    }
+                    if (j > 9 && j < 15)
+                    {
+                        j = j - 10;
+                    }
+                    if (j > 14 && j < 20)
+                    {
+                        j = j - 15;
+                    }
+                    if (j > 19 && j < 25)
+                    {
+                        j = j - 20;
+                    }
+                    if (j > 24 && j < 30)
+                    {
+                        j = j - 25;
+                    }
+                    if (j==30)
+                    {
+                        j = j - 30;
+                    }
+                    //imgg.src = "image/0" + j + ".JPG"; 
+                    imgg.style.backgroundImage= "URL(image/1"+j+".JPG)";  
+                    return i;              
+                    }
+                return i
+
+              }
+        }   
+
+
+        function ChangeBgColorA() {
+                document.getElementById("BtnA").style="width:110px;height:50px; color:#000000; background-color:#ffffff;position:absolute; left:933px; top: 500px;";
+               }
+
+        function MouseoutrangeA() {
+                document.getElementById("BtnA").style="height:50px; width:110px;position:absolute;  left:933px; top: 500px; ;background:transparent ";
+        }
+
+        
+        function ChangeBgColorB() {
+                document.getElementById("BtnB").style=style="width: 50px;height: 50px;padding: 10px 16px; color:#000000; font-size: 18px;line-height: 1.33;border-radius: 25px;  background-color:#ffffff   ; position:relative; left:-120px; top: 700px; ";
+               }
+
+        function MouseoutrangeB() {
+                document.getElementById("BtnB").style=style="width: 50px;height: 50px;padding: 10px 16px;font-size: 18px;line-height: 1.33;border-radius: 25px;      position:relative; left:-120px; top: 700px; ";
+        }
+
+        
+        function ChangeBgColorC(){
+                document.getElementById("BtnC").style="width: 50px;height: 50px;padding: 10px 16px; color:#000000; font-size: 18px;line-height: 1.33;border-radius: 25px;   background-color:#ffffff ;  position:relative; left:-100px; top: 700px; ";
+               }
+
+        function MouseoutrangeC(){
+                document.getElementById("BtnC").style="width: 50px;height: 50px;padding: 10px 16px;font-size: 18px;line-height: 1.33;border-radius: 25px;      position:relative; left:-100px; top: 700px; ";
+               }
+
+
+
+
+
+</script>
+</head>
+<body id="imgg" align="center" style="width:2000px; margin:0px" onload="ShowHello()" >
+    <div id="clock"></div>
+    <!--<img src="image/00.JPG" id="imgg" style="width:100%; height:100%;" />-->
+    <br />
+    <br />
+    <div >
+        <input id="BtnA" onmouseover="ChangeBgColorA()" onmouseout="MouseoutrangeA()" style="height:50px; width:110px;position:absolute; left:933px; top: 500px; " type="submit" onclick="location.href='CHING.html'" value="Enter" />
+
+        <!--<input id="BtnB" onmouseover="ChangeBgColorB()" onmouseout="MouseoutrangeB()" style="width: 50px;height: 50px;padding: 10px 16px;font-size: 18px;line-height: 1.33;border-radius: 25px;      position:relative; left:-73px; top: 650px; " type="submit" onclick="location.href='https://www.facebook.com/chingya.huang.7140'" value="F" />
+        <input id="BtnC" onmouseover="ChangeBgColorC()" onmouseout="MouseoutrangeC()" style="width: 50px;height: 50px;padding: 10px 16px;font-size: 18px;line-height: 1.33;border-radius: 25px;      position:relative; left:-45px; top: 650px; " type="submit" onclick="location.href='https://www.instagram.com/julia850823/?hl=zh-tw'" value="I" />-->
+
+
+
+        <img src="image/fACE.PNG" style="width:50px; height:50px;   position:absolute;   left:903px; top: 700px;" onclick="location.href='https://www.facebook.com/chingya.huang.7140'" />
+
+        <img src="image/INST.PNG" style="width:66px; height:50px;   position:absolute;   left:1013px; top: 700px;" onclick="location.href='https://www.instagram.com/julia850823/?hl=zh-tw'" />
+
+
+    </div>
+</body>
+</html>
